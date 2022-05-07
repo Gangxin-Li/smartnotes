@@ -58,7 +58,7 @@ ROOT_URLCONF = 'smartnotes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/gangxinli/Documents/smartnotes/static/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,12 +120,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_URL = '/static/'
+STATIC_URL = '/Users/gangxinli/Documents/smartnotes/static/'
 STATIC_DIRS =[
     BASE_DIR / 'Documents/smartnotes/static',
     BASE_DIR / 'Documents/smartnotes/static/css',
     '/Users/gangxinli/Documents/smartnotes/static/css',
-    '/Users/gangxinli/Documents/smartnotes/static'
+    '/Users/gangxinli/Documents/smartnotes/static',
+    'static/',
+    'static/css/'
     
     ]
 # Default primary key field type
