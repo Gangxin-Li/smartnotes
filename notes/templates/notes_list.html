@@ -1,1 +1,1 @@
-<html>    <h1> here are list all of the notes</h1>    <ul>        {%for note in notes%}            <li>{{note.title}}</li>        {%endfor%}    <ul></html>
+{% load static %}<html>    <head>        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/style.css' %}"    </head>    <h1> here are list all of the notes</h1>    <ul>        {% for note in notes %}            <li class = "note-li">{{note.title}}</li>        {% endfor %}    <ul></html>
